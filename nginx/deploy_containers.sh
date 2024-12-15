@@ -17,6 +17,7 @@ echo "6. 安装 Navidrome"
 echo "7. 安装 Vaultwarden"
 echo "8. 安装 Zoraxy"
 echo "9. 安装 Cloudflared"
+echo "10. 安装 Filebrowser"
 read -p "请输入选择: " choice
 
 # 安装 Docker
@@ -99,6 +100,9 @@ case $choice in
     9)
         fetch_docker_compose "Cloudflared"
         ;;
+    10)
+        fetch_docker_compose "Cloudflared"
+        ;;  
     *)
         echo "无效选择，请选择1-9之间的数字！"
         ;;
