@@ -101,7 +101,7 @@ case $choice in
         fetch_docker_compose "Cloudflared"
         ;;
     10)
-        fetch_docker_compose "Cloudflared"
+        fetch_docker_compose "Filebrowser"
         ;;  
     *)
         echo "无效选择，请选择1-10之间的数字！"
