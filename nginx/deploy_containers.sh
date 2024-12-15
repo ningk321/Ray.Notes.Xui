@@ -16,6 +16,7 @@ echo "5. 安装 QB"
 echo "6. 安装 Navidrome"
 echo "7. 安装 Vaultwarden"
 echo "8. 安装 Zoraxy"
+echo "9. 安装 Cloudflared"
 read -p "请输入选择: " choice
 
 # 安装 Docker
@@ -95,7 +96,10 @@ case $choice in
     8)
         fetch_docker_compose "Zoraxy"
         ;;
+    9)
+        fetch_docker_compose "Cloudflared"
+        ;;
     *)
-        echo "无效选择，请选择1-8之间的数字！"
+        echo "无效选择，请选择1-9之间的数字！"
         ;;
 esac
