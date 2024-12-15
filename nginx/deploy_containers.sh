@@ -104,6 +104,6 @@ case $choice in
         fetch_docker_compose "Cloudflared"
         ;;  
     *)
-        echo "无效选择，请选择1-9之间的数字！"
+        echo "无效选择，请选择1-10之间的数字！"
         ;;
 esac
