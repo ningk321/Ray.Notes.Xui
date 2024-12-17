@@ -19,6 +19,7 @@ echo "8. 安装 Zoraxy"
 echo "9. 安装 Cloudflared"
 echo "10. 安装 Filebrowser"
 echo "11. 安装 Stirling-PDF"
+echo "12. 安装 Tailscale"
 read -p "请输入选择: " choice
 
 # 安装 Docker
@@ -106,8 +107,11 @@ case $choice in
         ;;
     11)
         fetch_docker_compose "Stirling-PDF"
+        ;; 
+    12)
+        fetch_docker_compose "Tailscale"
         ;;    
     *)
-        echo "无效选择，请选择1-11之间的数字！"
+        echo "无效选择，请选择1-12之间的数字！"
         ;;
 esac
