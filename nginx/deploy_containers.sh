@@ -21,6 +21,7 @@ echo "10. 安装 Filebrowser"
 echo "11. 安装 Stirling-PDF"
 echo "12. 安装 Tailscale"
 echo "13. 安装 Portaineragent"
+echo "14. 安装 Madsonic"
 read -p "请输入选择: " choice
 
 # 安装 Docker
@@ -114,8 +115,11 @@ case $choice in
         ;;
     13)
         fetch_docker_compose "Portaineragent"
-        ;;    
+        ;;
+    14)
+        fetch_docker_compose "Madsonic"
+        ;;      
     *)
-        echo "无效选择，请选择1-13之间的数字！"
+        echo "无效选择，请选择1-14之间的数字！"
         ;;
 esac
